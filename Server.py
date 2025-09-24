@@ -1,6 +1,6 @@
 import socket
 from binarytree import Node as BinaryTreeNode, build as build_tree
-import BinaryTree
+from BinaryTree import BinaryTree, Node
 
 #recorrido en preorden
 def pre_orden(node):
@@ -22,7 +22,7 @@ def main():
             with conn:
                 print(f"Conectado {addr}")
 
-                tree =BinaryTree()
+                tree = BinaryTree()
                 data_received=[]
 
                 for _ in range(30):
