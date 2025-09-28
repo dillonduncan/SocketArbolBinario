@@ -11,7 +11,7 @@ class BinaryTree:
         self.root=None
 
 #funcion para insertar los datos en el arbol
-    def insert(self, value):        
+    def insert(self, value):  
         if self.root is None:
             self.root=Node(value)
         else:
